@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Event Management</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Marvel Event Management Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing-page-text">
+            <h1>LANDING PAGE</h1>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Marvel Event Management</h1>
+        <p>Your Premier Event Planning Partner</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                At <strong>Marvel Event Management</strong>, we specialize in curating exceptional experiences for a wide range of occasions. From corporate gatherings to charity events, personal celebrations, and trade shows, we are your trusted partner in creating <strong>unforgettable moments</strong>.
+            </p>
+            <p>
+                Our commitment to <strong>innovation</strong>, high guest engagement, and <strong>professionalism</strong> sets us apart. We bring our services to your doorstep, ensuring <strong>convenience</strong> and <strong>peace of mind</strong> throughout the planning process. Let us transform your ideas into reality.
+            </p>
+            <p>
+                Get ready for a <strong>remarkable event experience</strong> with <strong>Marvel Event Management</strong>.
+            </p>
+        </div>
+    </section>
+
+    <section id="expertise">
+        <h2>Our Expertise</h2>
+        <div class="expertise-container">
+            <div class="expertise-item">
+                <img src="images/image1.png" alt="Corporate Events Icon">
+                <h3>Corporate Events</h3>
+                <p>Elevate your brand with meticulously planned corporate events that leave a lasting impression on your stakeholders.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="images/image2.png" alt="Fundraising and Charity Icon">
+                <h3>Fundraising and Charity</h3>
+                <p>We're dedicated to supporting your philanthropic initiatives by orchestrating impactful fundraising events.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="images/image3.png" alt="Personal Events and Parties Icon">
+                <h3>Personal Events and Parties</h3>
+                <p>Celebrate life's special moments with our expert event planners who bring your vision to life.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="images/image4.png" alt="Trade Shows/Expositions Icon">
+                <h3>Trade Shows/Expositions</h3>
+                <p>Seamlessly execute trade shows and expositions that drive engagement and business growth.</p>
+            </div>
+        </div>
+    </section>    
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-gallery">
+            <div class="service-item">
+                <img src="images/fullplanning.avif" alt="Service 1">
+                <div class="service-details">
+                    <h3>Full Planning</h3>
+                    <p>Handles entire scope of your event, including all design, production management, and logistics.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="images/DD.png" alt="Service 2">
+                <div class="service-details">
+                    <h3>Event Design and Decor</h3>
+                    <p>Aesthetic essence of your event, giving it its own sensory appeal. Event design to match your vision, budget, and personality.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="images/petite.webp" alt="Service 3">
+                <div class="service-details">
+                    <h3>Petite Parties</h3>
+                    <p>Pandemic made us appreciate simple and intimate celebrations at home. Services for virtual and hybrid events at home.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="images/company-event.png" alt="Service 4">
+                <div class="service-details">
+                    <h3>Corporate Events</h3>
+                    <p>Offers a full range of event planning services for your business. Our team ensures your event captures the audience and leaves a positive impression of your brand or product.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="images/consultation.jpg" alt="Service 5">
+                <div class="service-details">
+                    <h3>Consultation</h3>
+                    <p>Planning tips, Event analysis, Guidance and Advice, Virtual Meetings</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-nav">
+            <button id="prev-btn" onclick="prevService()">&#8249;</button>
+            <button id="next-btn" onclick="nextService()">&#8250;</button>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for inquiries and bookings.</p>
+        <div class="contact-icons">
+            <a href="#" class="icon"><img src="images/fb.png" alt="Facebook Icon"></a>
+            <a href="#" class="icon"><img src="images/insta.png" alt="Instagram Icon"></a>
+            <a href="https://wa.me/your-phone-number" class="icon"><img src="images/WA.png" alt="WhatsApp Icon"></a>
+            <a href="#" class="icon"><img src="images/linkedin.webp" alt="LinkedIn Icon"></a>
+            <a href="mailto:your-email@example.com" class="icon"><img src="images/gmail.png" alt="Gmail Icon"></a>
+        </div>
+    </section>    
+      
+
+    <footer>
+        <p>&copy; 2023 Marvel Event Management</p>
+    </footer>
+    <script>
+        let currentService = 0;
+        const serviceItems = document.querySelectorAll('.service-item');
+        const prevButton = document.getElementById('prev-btn');
+        const nextButton = document.getElementById('next-btn');
+    
+        function showService(index) {
+            serviceItems.forEach((item, i) => {
+                if (i === index) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    
+        function prevService() {
+            if (currentService > 0) {
+                currentService--;
+                showService(currentService);
+            }
+        }
+    
+        function nextService() {
+            if (currentService < serviceItems.length - 1) {
+                currentService++;
+                showService(currentService);
+            }
+        }
+    
+        showService(currentService);
+    </script>
+</body>
+</html>

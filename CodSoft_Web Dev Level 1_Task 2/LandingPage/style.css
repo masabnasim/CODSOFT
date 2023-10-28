@@ -1,0 +1,213 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2cb8fe;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+.logo img {
+    width: 0.01px; 
+    height: 0.010px; 
+    margin: 0.01px; 
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: right; 
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('images/party-header-dancing.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: rgb(255, 255, 255); 
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#about {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+
+#services {
+    background-color: #a1deff;
+    padding: 40px 0;
+    position: relative;
+}
+
+.service-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.service-item {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    width: 50%;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.service-content {
+    width: 50%;
+    text-align: left;
+}
+
+.service-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 16px;
+}
+
+
+.gallery-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery-nav button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.gallery-nav button:focus {
+    outline: none;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #2cb8fe;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+#expertise {
+    background-color: #a1deff;
+    padding: 40px 0;
+}
+
+.expertise-container {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.expertise-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #379abb;
+    text-align: center;
+}
+
+.expertise-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-icons .icon img {
+    width: 40px;
+    height: 40px; 
+    margin: 5px;
+}
+
+
+
+
+

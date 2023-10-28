@@ -1,0 +1,218 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #d5f6f8;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.about-content p {
+    font-size: 18px;
+}
+
+.image-container {
+    flex: 0.5;
+    text-align: center;
+}
+
+.circular-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 100%;
+}
+
+#skills:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#skills:hover .circular-image {
+    transform: scale(1.2); 
+}
+
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-container1 {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container1 img {
+    max-width: 90%;
+    height: auto;
+}
+
+.skills-content {
+    flex: 2;
+}
+
+.skill-level {
+    width: 70%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.skill-progress {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #007BFF;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 20px;
+}
+
+#skills li .skill-level {
+    width: 95%;
+}
+
+#projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #d5f6f8;
+
+}
+
+.project {
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    text-align: center;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+}
+
+button {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#resume {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#resume a {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-icons .icon img {
+    width: 40px; 
+    height: 40px; 
+    margin: 5px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
